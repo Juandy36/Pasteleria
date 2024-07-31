@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <title>Formulario de inicio de sesión</title>
+</head>
+<body>
+    <form action="login.php" method="post" class="login-form">
+        <div class="input-line">
+            <label class="label-form" for="id">ID</label>
+            <input type="text" id="id" name="id" class="input-field" placeholder="Ingrese su ID" >
+        </div>
+        
+        <div class="input-line">
+            <label class="label-form" for="pass">Contraseña</label>
+            <input type="text" id="pass" name="pass" class="input-field" placeholder="Ingrese su contraseña" required>
+        </div>
+        <input type="submit" class="button-form" value="Iniciar Sesión">
+        <a href="register.html">no tienes cuenta aun?</a>
+    </form>
+</body>
+</html>

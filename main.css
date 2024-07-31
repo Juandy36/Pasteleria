@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5DC;
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+}
+.sidebar {
+    width: 250px;
+    background-color: #B2D3C2;
+    color: #ffff;
+    height: calc(100vh - 50px); /* Ajusta el alto para no superponer con la barra superior */
+    position: fixed;
+    top: 50px; /* Empieza justo debajo de la barra superior */
+    left: -250px; /* Inicialmente oculto */
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+.sidebar a {
+    color: #383434;
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    border-bottom: 1px solid #666666;
+}
+.sidebar a:hover {
+    background-color: #0056b3;
+}
+.content {
+    margin-left: 0;
+    padding: 20px;
+    width: 100%;
+    transition: margin-left 0.3s ease;
+    margin-top: 50px; /* Ajusta el margen superior para no superponer con la barra superior */
+}
+/* CSS para la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6B1B1; /* Color de fondo de la navbar */
+    color: #fff;
+    padding: 10px 20px;
+    width: 100%;
+    height: 50px;
+    position: fixed; /* Fija la navbar en la parte superior */
+    top: 0; /* Posición en la parte superior de la ventana */
+    left: 0; /* Alinea a la izquierda */
+    z-index: 1001; /* Asegura que la navbar esté por encima de otros elementos */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    transition: top 0.3s; /* Animación suave para el movimiento */
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 40px;
+}
+
+.navbar .menu-icon {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Asegúrate de que el contenido no quede oculto debajo de la navbar */
+.content {
+    margin-top: 60px; /* Ajusta este valor según la altura de tu navbar */
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.image-box {
+    display: inline-block;
+    width: 25%;
+    margin: 1.66%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.image-box img {
+    width: 100%;
+    height: auto;
+}
+.image-box p {
+    padding: 10px;
+}
+
+span{
+    color: #F5F5DC;
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+h2 {
+    color: #ec7f7f;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en nuevas líneas */
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+li {
+    flex: 1 1 calc(50% - 20px); /* 50% para 2 elementos por fila con margen */
+    margin: 10px; /* Margen para espacio entre elementos */
+    box-sizing: border-box;
+}
+
+strong {
+    color: #555;
+}
+p {
+    max-width: 600px; /* Ajusta este valor según tus necesidades */
+    margin: 20px auto; /* Centra el párrafo y añade espacio superior e inferior */
+    padding: 0 10px; /* Añade algo de relleno a los lados */
+    line-height: 1.6;
+}
+
+
+.productos ul {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en nuevas líneas */
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.productos li {
+    flex: 1 1 calc(50% - 20px); /* 50% para 2 elementos por fila con margen */
+    margin: 10px; /* Margen para espacio entre elementos */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el texto y la imagen */
+}
+
+
+
+.info h1 {
+    font-size: 2.5em; /* Tamaño del texto del encabezado */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+    text-align: left; /* Alinea el texto del encabezado a la izquierda */
+}
+
+.info p {
+    font-size: 1.2em; /* Tamaño del texto del párrafo */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    color: #666; /* Color del texto del párrafo */
+    text-align: left; /* Alinea el texto del párrafo a la izquierda */
+}

@@ -1,0 +1,99 @@
+/* Estilos generales */
+body {
+    background-color: #2c3e50; /* Fondo oscuro */
+    color: #ecf0f1; /* Texto claro */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.content {
+    background-color: #34495e; /* Fondo del contenedor */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Contenedor del formulario */
+.formulario {
+    background-color: #3b5998;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Estilo para el título principal */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los subtítulos */
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Estilo para los formularios */
+form {
+    margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Estilo para los inputs y selects */
+input[type="text"],
+input[type="submit"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Estilo para los botones */
+input[type="submit"],
+a {
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover efecto para los botones */
+input[type="submit"]:hover,
+a:hover {
+    background-color: #c0392b;
+}
+
+/* Estilo para los mensajes */
+p {
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1em;
+}

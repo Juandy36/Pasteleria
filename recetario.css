@@ -1,0 +1,61 @@
+/* Estilos Generales del Formulario */
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilos de las Líneas de Entrada */
+.input-line {
+    margin-bottom: 20px;
+}
+
+.input-line label {
+    display: block;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-line input[type="text"], 
+.input-line textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box; /* Para incluir el padding en el ancho total */
+}
+
+.input-line textarea {
+    resize: vertical; /* Permitir solo el cambio de tamaño vertical */
+}
+
+/* Estilos del Botón de Envío */
+input[type="submit"] {
+    background-color: #F6B1B1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box; /* Para incluir el padding en el ancho total */
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #e48a8a; /* Un color ligeramente más oscuro para el hover */
+}
